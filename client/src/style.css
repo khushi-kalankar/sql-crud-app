@@ -1,0 +1,174 @@
+.app {
+    height: 100vh;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f0f4f8; /* Soft pastel background */
+    font-family: 'Poppins', sans-serif;
+  
+    .addHome {
+      padding: 12px 25px;
+      margin-top: 20px;
+      cursor: pointer;
+      border: none;
+      background-color: #ff7f50; /* Vibrant coral button */
+      color: white;
+      font-weight: bold;
+      border-radius: 25px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+  
+    .addHome:hover {
+      background-color: #ff6347; /* Darker coral on hover */
+      transform: translateY(-5px); /* Slight lift on hover */
+    }
+  
+    h1 {
+      margin-bottom: 40px;
+      font-size: 2.8rem;
+      color: #333; /* Dark neutral for strong contrast */
+      font-weight: bold;
+    }
+  
+    .books {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+  
+      .book {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        max-width: 300px; /* Increased width for book cards */
+        min-width: 250px; /* Ensures larger size for "Add New" cards */
+      }
+  
+      .book:hover {
+        transform: translateY(-16px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      }
+  
+      img {
+        width: 240px; /* Increased image width */
+        height: 340px; /* Increased height for better aspect ratio */
+        object-fit: cover;
+        border-radius: 10px;
+        background-color: #f3e5f5; /* Light lavender background */
+      }
+  
+      button {
+        padding: 10px 25px;
+        background-color: #eceff1; /* Soft gray for buttons */
+        cursor: pointer;
+        border-radius: 25px;
+        font-weight: bold;
+        color: #37474f;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        border: none;
+      }
+
+      button:hover {
+        background-color: #cfd8dc; /* Slightly darker gray */
+        color: #263238;
+      }
+  
+      .delete {
+        background-color: #ffb3b3;
+        color: #d32f2f; /* Red for delete */
+      }
+
+      .delete:hover {
+        background-color: #ff8a80;
+        color: white;
+      }
+
+      .update {
+        background-color: #90caf9;
+        color: #1e88e5; /* Blue for update */
+      }
+
+      .update:hover {
+        background-color: #42a5f5;
+        color: white;
+      }
+    }
+  
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      background-color: white;
+      padding: 80px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      max-width: 800px; /* Increased width for forms */
+    }
+  
+    input, textarea {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #cfd8dc;
+      border-radius: 8px;
+      transition: border-color 0.3s ease;
+      background-color: #f1f8e9; /* Soft green background for input fields */
+    }
+  
+    input:focus, textarea:focus {
+      border-color: #64b5f6; /* Blue focus effect */
+      outline: none;
+      background-color: #e8f5e9; /* Even softer green on focus */
+    }
+  
+    button {
+      border: none;
+      padding: 12px 25px;
+      background-color: #ff7f50;
+      color: white;
+      font-weight: bold;
+      border-radius: 25px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff6347;
+      transform: translateY(-3px); /* Hover lift */
+    }
+  }
+
+  h1 {
+    margin-bottom: 40px;
+    font-size: 3rem; /* Increased font size for better visibility */
+    color: #ff7f50; /* Vibrant coral to match the button color */
+    font-family: 'Poppins', sans-serif; /* Modern, clean font */
+    font-weight: 700; /* Bold for emphasis */
+    letter-spacing: 2px; /* Spacing for a chic look */
+    text-transform: uppercase; /* Makes the text more stylish */
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle depth with shadow */
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  
+  h1::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: #ff7f50; /* Matches the text color */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+  }
+
+
